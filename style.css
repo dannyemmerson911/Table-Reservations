@@ -1,0 +1,218 @@
+body {
+	background-color: #e1d7d4;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#mainHead {
+	font-family: "Rubik Mono One", sans-serif; 
+	font-weight: bold;
+	color: #e34e45;
+	text-align: center;
+}
+
+#mainSub {
+	font-family: "Roboto Mono", monospace; 
+	font-weight: normal;
+	text-align: center;
+}
+
+
+
+
+h1 {
+	font-family: "Rubik Mono One", sans-serif; 
+	font-weight: bold;
+	color: #e34e45;
+	margin-left: 10px;
+	
+}
+
+h2 {
+	font-family: "Roboto Mono", monospace; 
+	font-weight: normal;
+	margin-left: 10px;
+	
+}
+
+
+#floorPlan{
+	background-color: #EEE;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 350px;
+	height: 400px;
+	justify-content: space-evenly;
+	padding-top: 30px;
+	margin: 0 auto;
+	z-index: 0;
+}
+
+.tables {
+	
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	
+
+}
+
+p {
+	font-family: "Roboto Mono", monospace;
+	position: absolute;
+	margin-top: 40px;
+	
+	
+}
+
+
+.available {
+	background-color: #ccc;
+	color: #ADAAAA;
+}
+
+.reserved {
+	background-color: #ADAAAA;
+	color: #ccc;
+}
+
+input {
+	display: block;
+	padding: 10px;
+	margin-left:10px;
+	border: none;
+	border-bottom: solid #adaaaa 2px;
+	background-color: #eee;
+	width: 90%;
+	
+
+}
+
+button {
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 35px;
+	width: 95%;
+}
+
+.tables.available:hover {
+	background-color: #ADAAAA;
+	color: #ccc;
+}
+
+.tables:hover {
+	cursor: pointer;
+}
+
+.tables:hover.reserved{
+	cursor:not-allowed;
+}
+
+#close:hover {
+	cursor: pointer;
+}
+
+#table1{
+	order: 1;
+}
+
+#table2 {
+	order: 2;
+}
+
+#table3 {
+	order: 3;
+}
+
+#table4 {
+	order: 4;
+}
+
+#table5 {
+	order: 5;
+}
+
+#table6 {
+	order: 6;
+}
+
+#table7 {
+	order: 7;
+}
+
+#table8 {
+	order: 8;
+}
+
+#table9 {
+	order: 9;
+}
+
+ #reservationForm{
+ 	background-color: #EEE;
+ 	box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+ 	margin: 0 auto;
+    display: none;
+    left: 450px;
+    top: 170px;
+    z-index: 1; 
+    width: 30%;
+    height: 45%;
+    position: fixed;
+ }
+
+ #save {
+ 	background-color: #008000;
+ 	box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+
+ }
+
+ #close{
+ 	font-family: "Roboto Mono", monospace;
+ 	float: right;
+ 	margin-top: 3px;
+ 	margin-right: 3px;
+ }
+
+ #reservationInfo {
+ display: none;
+ font-family: "Roboto Mono", monospace;
+ z-index: 1;
+
+ background-color: black;
+ color: white;
+ font-size: 15px;
+ height: 100%;
+ width: 200px;
+ padding: 10px;
+ border-radius: 15%;
+ border: solid white 2px;
+
+ }
+
+.reserved:hover #reservationInfo {
+ 	margin-top: 75px;
+ 	display: block;
+ }
+
+ @media screen and (max-width: 960px;){
+ 	#reservationForm{
+ 	background-color: #EEE;
+ 	box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+ 	
+    display: none;
+    left: 50px;
+    top: 170px;
+    z-index: 1; 
+    width: 30%;
+    height: 45%;
+   	position: absolute;
+    
+ 	}
+ }

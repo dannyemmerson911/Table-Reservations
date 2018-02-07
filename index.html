@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik+Mono+One" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1 id="mainHead">Table Finder</h1>
+	<h2 id="mainSub">Pick your table</h2>
+
+	<div id="floorPlan">
+		<div class="available tables" id="table1">
+			<p>1</p>
+		</div>
+		<div class="available tables" id="table2">
+			<p>2</p>
+		</div>
+		<div class="available tables" id="table3">
+			<p>3</p>
+		</div>
+		<div class="available tables" id="table4">
+			<p>4</p>
+		</div>	
+		<div class="available tables" id="table5">
+			<p>5</p>
+		</div>
+		<div class="available tables" id="table6">
+			<p>6</p>
+		</div>
+		<div class="available tables" id="table7">
+			<p>7</p>
+		</div>
+		<div class="available tables" id="table8">
+			<p>8</p>
+		</div>
+		<div class="available tables" id="table9">
+			<p>9</p>
+		</div>
+	</div>
+	<form id="reservationForm">
+		<span id="close">X</span>
+		<h1>New Reservation</h1>
+		<h2>Table Number: <span class="table-number-text"></span></h2>
+		<input id="name" type="text" name="name" placeholder="Your name">
+		<input type="text" name="number" placeholder="Your number">
+		<input id="party" type="text" name="partySize" placeholder="Size of your party?">
+		<button type="submit" id="save">Save</button>
+	</form>
+		
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
